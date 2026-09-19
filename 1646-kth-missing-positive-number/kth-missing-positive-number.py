@@ -2,11 +2,11 @@ class Solution:
     def findKthPositive(self, arr: list[int], k: int) -> int:
         res_arr = [] 
         n = len(arr) 
-        j = 0 
+        h = 0 
         for i in range (1,n+k+1) :
-            if j >= n  or arr[j] != i  :
+            if h >= n  or arr[h] != i  :
                 res_arr.append(i) 
             else : 
-                j += 1    
+                h += 1    
         return res_arr[k-1] 
              
