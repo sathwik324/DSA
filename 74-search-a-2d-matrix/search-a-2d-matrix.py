@@ -6,10 +6,10 @@ class Solution:
         right = m*n -1 
         while left <= right  :
             mid = (left+right)//2 
-            mid_val = matrix[mid//n][mid%n]
-            if mid_val == target :
+            mid_value = matrix[mid//n][mid%n]
+            if mid_value == target :
                 return True 
-            elif mid_val < target :
+            elif mid_value < target :
                 left = mid +1
             else :
                 right = mid -1  
